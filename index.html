@@ -117,10 +117,10 @@
     /* Keep the portrait recognizable while retaining a dark enough backdrop for legible text. */
     html{background:var(--bg)}
     body{position:relative;isolation:isolate;background:transparent}
-    body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(180deg,rgba(11,13,15,.20) 0%,rgba(11,13,15,.32) 44%,rgba(11,13,15,.56) 100%),radial-gradient(ellipse at 52% 38%,rgba(245,185,66,.08),transparent 30%),url("assets/ftg-mentor-background.webp");background-position:center,center,center top;background-size:100% 100%,100% 100%,contain;background-repeat:no-repeat;filter:blur(.5px)}
+    body::before{content:"";position:fixed;inset:-18px;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(11,13,15,.20) 0%,rgba(11,13,15,.32) 44%,rgba(11,13,15,.56) 100%),radial-gradient(ellipse at 52% 38%,rgba(245,185,66,.08),transparent 30%),url("assets/ftg-mentor-background.webp") center 0%/cover no-repeat;filter:blur(1px);transform:scale(1.012)}
     .profile-intro{background:radial-gradient(ellipse at 85% 10%,rgba(245,185,66,.10),transparent 42%),rgba(11,13,15,.24)}
     .hero{background:radial-gradient(ellipse at 72% 30%,rgba(245,185,66,.14),transparent 30%),linear-gradient(180deg,rgba(14,18,19,.28) 0%,rgba(11,13,15,.48) 100%)}
-    @media(max-width:700px){body::before{filter:blur(.35px)}}
+    @media(max-width:700px){body::before{background-position:center 22%;filter:blur(.75px);transform:scale(1.02)}}
   </style>
   <script type="application/ld+json">
 {
