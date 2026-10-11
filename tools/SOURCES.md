@@ -4,3 +4,4 @@
 - Chín mục miễn phí được ghi nhận từ https://aizening.com/tools?cat=free; hạn mức 100 lượt/ngày phản ánh nội dung trang nguồn tại thời điểm chụp.
 - Các thao tác sử dụng công cụ mở trang gốc AIZENING. Trang GitHub Pages này chỉ là danh mục tĩnh, không đăng nhập, tải tệp hay tạo nội dung thay mặt AIZENING.
 - Trang và dữ liệu được đặt riêng trong `/tools/`; `index.html` chỉ có một liên kết điều hướng mới tới trang này.
+- `catalog.json` là nguồn dữ liệu; sau khi cập nhật dữ liệu, chạy `python3 tools/build_catalog_html.py` từ thư mục gốc để đồng bộ danh mục HTML tĩnh dùng làm nội dung dự phòng cho crawler và trình duyệt không chạy JavaScript.
