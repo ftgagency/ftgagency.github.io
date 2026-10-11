@@ -105,6 +105,14 @@
       .nav-cta { display: inline-flex; padding: 10px 12px; font-size: 12px; white-space: nowrap; }
       .nav-cta .cta-label { display: none; }
     }
+    .profile-intro{padding:112px 0 28px;background:radial-gradient(ellipse at 85% 10%,rgba(245,185,66,.10),transparent 42%),var(--bg)}
+    .profile-intro h2{font:700 clamp(34px,5vw,58px)/1.12 'Manrope',sans-serif;letter-spacing:-.035em;margin:0 0 16px;text-transform:none}
+    .profile-intro-copy{max-width:930px;color:var(--muted);font-size:16px;line-height:1.75}
+    .profile-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px;max-width:900px}
+    .profile-stat{display:flex;align-items:center;gap:13px;min-height:58px;padding:13px 16px;border:1px solid rgba(245,185,66,.18);border-radius:14px;background:rgba(255,255,255,.035)}
+    .profile-stat strong{font:700 15px 'Manrope',sans-serif;color:var(--gold2)}
+    .profile-stat span{color:#d7dcdc;font-size:13px}
+    @media(max-width:560px){.profile-intro{padding:100px 0 24px}.profile-intro h2{font-size:clamp(32px,9vw,42px)}.profile-stats{grid-template-columns:1fr;gap:10px}.profile-stat{min-height:54px}}
   </style>
   <script type="application/ld+json">
 {
@@ -254,6 +262,16 @@
 <body>
   <header><div class="container nav"><a class="brand" href="#top" aria-label="FTG Academy"><span class="mark">F</span> FTG <span style="color:var(--gold)">Academy</span></a><button class="menu-btn" aria-label="Mở menu" aria-controls="site-navigation" aria-expanded="false">☰</button><nav class="nav-links" id="site-navigation"><a href="tools/">Kho công cụ AI</a><a href="#free-ai-videos">Video AI miễn phí</a><a href="#courses">Khóa học</a><a href="#ai-skills">Kỹ năng AI</a><a href="#about">Về FTG</a><a href="#gallery">Học viên nói gì</a><a href="#faq">Câu hỏi thường gặp</a><a href="#register">Liên hệ</a></nav><a class="nav-cta" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer" aria-label="Tư vấn qua Zalo, số 0918 212 460"><span class="cta-label">Tư vấn Zalo · </span><strong class="nav-number">0918 212 460</strong><span class="cta-arrow" aria-hidden="true"> ↗</span></a></div></header>
   <main id="top">
+    <section class="profile-intro" aria-labelledby="profile-intro-title"><div class="container">
+      <h2 id="profile-intro-title">Đam mê công nghệ, <span class="highlight">kiến tạo giá trị</span></h2>
+      <p class="profile-intro-copy">Hiện là AI Marketing Mentor &amp; Consultant độc lập, đồng hành cùng doanh nghiệp Việt ứng dụng AI vào toàn bộ hành trình marketing — từ chiến lược, content, visual đến automation. Đã hỗ trợ hơn 5.000 học viên; có hơn 10 năm kinh nghiệm marketing số, 3+ năm chuyên sâu AI Marketing và 200+ dự án doanh nghiệp đã triển khai.</p>
+      <div class="profile-stats" role="list" aria-label="Kinh nghiệm và chuyên môn">
+        <div class="profile-stat" role="listitem"><strong>10+ năm</strong><span>Kinh nghiệm marketing số</span></div>
+        <div class="profile-stat" role="listitem"><strong>5.000+</strong><span>Học viên đã hỗ trợ</span></div>
+        <div class="profile-stat" role="listitem"><strong>Chuyên gia</strong><span>Facebook &amp; TikTok Ads</span></div>
+        <div class="profile-stat" role="listitem"><strong>Tiên phong</strong><span>Ứng dụng AI vào marketing</span></div>
+      </div>
+    </div></section>
     <section class="hero"><div class="container hero-grid"><div><div class="eyebrow">FTG Academy by Trần Thanh Bằng</div><h1>Học <span class="highlight">AI Marketing</span> thực chiến cùng FTG Academy.</h1><p class="hero-copy">FTG Academy chia sẻ cách ứng dụng AI vào nội dung, quảng cáo, chatbot và phân tích dữ liệu marketing. Bắt đầu với video miễn phí, tìm hiểu các lộ trình khóa học và khám phá kho công cụ AI tham khảo.</p><div class="actions"><a class="button primary" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer">Tư vấn qua Zalo <span>↗</span></a><a class="button ghost" href="#free-ai-videos">Học AI miễn phí</a></div><p class="hero-note">Kết quả thực tế phụ thuộc vào mục tiêu, ngành hàng và cách triển khai; nội dung này không phải cam kết doanh thu.</p><a class="phone-link" href="https://zalo.me/0918212460" target="_blank" rel="noopener noreferrer" aria-label="Mở Zalo tư vấn với số 0918 212 460">Zalo tư vấn: <strong>0918 212 460</strong></a></div><div class="visual"><img class="hero-image" src="assets/hero-analytics.jpg" alt="Các đồng nghiệp cùng xem biểu đồ và tài liệu chiến lược tại bàn họp"><div class="dash one"><h4>CAM KẾT KẾT QUẢ</h4><div class="big-number">Ứng dụng AI</div><h4 style="margin-top:8px">Học để làm được ngay</h4></div><div class="dash two"><h4>ĐÀO TẠO THỰC CHIẾN</h4><ul class="mini-list"><li>Facebook Ads <b>● Ready</b></li><li>TikTok Ads <b>● Ready</b></li><li>AI Automation <b>● Ready</b></li></ul></div></div></div></section>
     <section id="free-ai-videos"><div class="container"><div class="section-head"><div><div class="eyebrow">Tài nguyên học tập miễn phí</div><h2 class="display">VIDEO HỌC AI <span class="highlight">MIỄN PHÍ</span></h2></div><p>Chọn lọc video tiếng Việt xem công khai trên YouTube, phù hợp để bắt đầu với ChatGPT và ứng dụng AI vào nội dung marketing.</p></div><div class="cards">
       <article class="card video-card"><div class="video-card-copy"><div class="skill-index" aria-hidden="true">01</div><h3>Hướng Dẫn Chat GPT Cơ Bản Dành Cho Người Mới Bắt Đầu | Trọn Bộ</h3><div class="meta"><span>Người mới</span><span>ChatGPT cơ bản</span><span>Miễn phí</span></div><p>Khóa học dài, đi từ cách sử dụng ChatGPT đến các ứng dụng như phân tích dữ liệu và tạo chatbot tùy chỉnh.</p></div><a class="button primary video-action" href="https://www.youtube.com/watch?v=ngfUwQX9200" target="_blank" rel="noopener noreferrer">Mở video trên YouTube ↗</a></article>
