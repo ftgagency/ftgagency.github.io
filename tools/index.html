@@ -39,13 +39,8 @@
     @media(max-width:540px){.topbar{height:58px}.brand-mark{width:30px;height:30px}.contact-link{padding:8px 9px;font-size:10px}.mobile-menu{width:35px;height:35px}.sidebar{top:58px;height:calc(100vh - 58px)}.side-overlay{inset:58px 0 0}main{padding:19px 13px 38px}.title-icon{width:37px;height:37px}.title-line{gap:9px}.page-head h1{font-size:25px}.page-head p{font-size:12px}.stats{width:100%}.stat{flex:1;justify-content:center;font-size:10px}.controls{margin-top:15px}.tab{padding:7px 10px;font-size:10px}.result-row{align-items:flex-start;flex-direction:column;gap:4px}.source-note{text-align:left}.tool-grid{grid-template-columns:1fr;gap:13px}.preview{aspect-ratio:16/9}.card-body{padding:13px}.card-body h2{min-height:0;font-size:14px}.card-body p{min-height:0;margin-bottom:13px}.site-footer{flex-direction:column}.footnote{padding:13px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
-    .user-feedback{margin-top:28px;padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
-    .user-feedback h2{margin:0 0 16px;color:var(--text);font:800 clamp(25px,3vw,34px)/1.16 'Manrope','Be Vietnam Pro',sans-serif;text-transform:uppercase}
-    .user-feedback figure{max-width:850px;margin:0 auto;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#101416}
-    .user-feedback figure a{display:block;cursor:zoom-in}
-    .user-feedback img{display:block;width:100%;height:auto}
-    @media(max-width:540px){.user-feedback{padding:16px}.user-feedback h2{font-size:26px}}
   </style>
+  <link rel="stylesheet" href="../assets/feedback-layout.css?v=20261028">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -159,6 +154,7 @@ src="https://www.facebook.com/tr?id=1695543372086757&ev=PageView&noscript=1"
             <div class="stat free-stat"><span class="stat-mark" aria-hidden="true">◇</span><strong id="freeStat">9</strong> công cụ miễn phí</div>
           </div>
         </section>
+        <div class="ai-start-message"><p><strong>Có rất nhiều công cụ AI trên thị trường. Bạn muốn ứng dụng nhưng chưa biết bắt đầu từ đâu và lo tốn tiền cho AI?</strong></p><p>Tôi sẽ hướng dẫn bạn thực hành những việc bạn muốn làm và giúp bạn chọn công cụ AI tối ưu nhất, tiết kiệm chi phí nhất cho nhu cầu của bạn.</p></div>
         <section aria-label="Bộ lọc và danh sách công cụ">
           <div class="controls">
             <div class="tabs-wrap"><nav class="tabs" id="categoryTabs" aria-label="Lọc theo danh mục"></nav></div>
@@ -448,9 +444,19 @@ src="https://www.facebook.com/tr?id=1695543372086757&ev=PageView&noscript=1"
           <div class="footnote"><strong>Lưu ý:</strong> Đây là danh mục giới thiệu do FTG Academy tổng hợp từ thông tin công khai trên <a href="https://aizening.com/tools" target="_blank" rel="noopener noreferrer">AIZENING</a> vào ngày 08/10/2026. Nút hành động sẽ mở công cụ tại nền tảng gốc; trang này không đăng nhập, tải tệp hay xử lý nội dung AI thay cho AIZENING. Giá và hạn mức có thể thay đổi theo nguồn.</div>
         </section>
 
-        <section class="user-feedback" id="feedback" aria-labelledby="feedback-title">
-          <h2 id="feedback-title">FEEDBACK</h2>
-          <figure><a href="../assets/feedback-ftg.jpg" target="_blank" rel="noopener noreferrer" aria-label="Mở ảnh gốc đầy đủ"><img src="../assets/feedback-ftg.jpg" alt="Hai người ngồi bên máy tính xách tay tại quán cà phê" width="1280" height="956" loading="lazy" decoding="async"></a></figure>
+        <section class="user-feedback feedback-layout" id="feedback" aria-labelledby="feedback-title">
+          <div class="feedback-panel">
+          <div class="feedback-heading">
+            <h2 id="feedback-title">FEEDBACK</h2>
+            <a class="feedback-open" href="../assets/feedback-ftg.jpg" target="_blank" rel="noopener noreferrer" aria-label="Xem ảnh FEEDBACK đầy đủ (tab mới)">Xem ảnh đầy đủ ↗</a>
+          </div>
+          <figure class="feedback-media">
+            <a class="feedback-photo-link" href="../assets/feedback-ftg.jpg" target="_blank" rel="noopener noreferrer" aria-label="Mở ảnh FEEDBACK gốc đầy đủ (tab mới)">
+              <img src="../assets/feedback-ftg.webp" srcset="../assets/feedback-ftg-768.webp 768w, ../assets/feedback-ftg.webp 1280w" sizes="(max-width: 700px) calc(100vw - 72px), 760px" alt="Hai người ngồi bên máy tính xách tay tại quán cà phê" width="1280" height="958" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Nhấn ảnh để xem bản gốc đầy đủ.</figcaption>
+          </figure>
+        </div>
         </section>
         <footer class="site-footer"><span>© <span id="year">2026</span> FTG Academy · Marketing thực chiến</span><a href="../">Quay về FTG Academy ↗</a></footer>
       </div>
